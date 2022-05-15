@@ -15,7 +15,7 @@
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="286.0" prefWidth="598.0" style="-fx-background-color: white;">
          <children>
             <ListView fx:id="ListView" layoutX="-2.0" layoutY="-1.0" prefHeight="287.0" prefWidth="600.0" style="-fx-background-color: #7f1c9e;" />
-            <Label alignment="CENTER" prefHeight="26.0" prefWidth="598.0" style="-fx-background-color: #301440;" text="Song #1" textFill="#f2f2f2">
+            <Label fx:id="songLabel" alignment="CENTER" prefHeight="26.0" prefWidth="598.0" style="-fx-background-color: #301440;" text="Song #1" textFill="#f2f2f2">
                <font>
                   <Font name="System Bold" size="19.0" />
                </font>
@@ -33,7 +33,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="playButton" layoutX="110.0" layoutY="28.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="52.0" style="-fx-background-radius: 100; -fx-background-color: White;" text="Play">
+            <Button fx:id="playButton" layoutX="111.0" layoutY="28.0" mnemonicParsing="false"  prefHeight="50.0" prefWidth="52.0" style="-fx-background-radius: 100; -fx-background-color: White;" text="Play">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -44,7 +44,7 @@
                </font>
             </Button>
             <ComboBox fx:id="speedBox" layoutX="333.0" layoutY="36.0" prefHeight="34.0" prefWidth="91.0" promptText="Speed" style="-fx-background-color: White;" />
-            <Slider fx:id="volumeSlider" layoutX="438.0" layoutY="46.0" />
+            <Slider fx:id="volumeSlider" layoutX="438.0" layoutY="46.0" value="50.0" />
             <ProgressBar fx:id="songProgressBar" prefHeight="18.0" prefWidth="598.0" progress="0.0" style="-fx-background-color: white;" />
          </children></AnchorPane>
   </items>
